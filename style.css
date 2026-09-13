@@ -900,3 +900,69 @@ section {
     height: 60px;
   }
 }
+/* =========================
+   PORTFOLIO POLISH
+========================= */
+
+.portfolio-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.portfolio-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 102, 255, 0.18);
+}
+
+.portfolio-card a {
+  display: block;
+  overflow: hidden;
+}
+
+.portfolio-card img {
+  transition: transform 0.4s ease;
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.05);
+}
+
+.portfolio-image {
+  transition: transform 0.4s ease;
+}
+
+.portfolio-card:hover .portfolio-image {
+  transform: scale(1.05);
+}
+
+.portfolio-card h3 {
+  font-size: 18px;
+}
+
+.portfolio-card p {
+  color: #bbb;
+}
+
+
+/* Mobile portfolio */
+
+@media (max-width: 600px) {
+
+  .portfolio-container {
+    padding: 0 5px;
+  }
+
+  .portfolio-card {
+    max-width: 350px;
+  }
+
+  .portfolio-card img,
+  .portfolio-image {
+    height: 200px;
+  }
+
+}
