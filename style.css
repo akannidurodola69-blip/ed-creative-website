@@ -881,3 +881,22 @@ section {
   }
 
 }
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .logo img {
+    width: 60px;
+    height: 60px;
+  }
+}
