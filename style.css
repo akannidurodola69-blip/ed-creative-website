@@ -966,3 +966,31 @@ section {
   }
 
 }
+
+/* Mobile header: logo left, hamburger right */
+@media (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav .logo {
+    order: 1;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  #menuButton {
+    order: 2;
+    display: block;
+    margin-left: auto;
+  }
+
+  nav .nav-links {
+    order: 3;
+    width: 100%;
+  }
+}
